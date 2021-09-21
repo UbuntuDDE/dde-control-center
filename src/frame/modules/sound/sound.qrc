@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/sound">
+        <file>themes/light/light.qss</file>
+        <file>themes/dark/dark.qss</file>
+        <file>themes/dark/balance-left.png</file>
+        <file>themes/dark/balance-right.png</file>
+        <file>themes/dark/volume-low.png</file>
+        <file>themes/dark/volume-high.png</file>
+        <file>themes/dark/volume-feedback-high.png</file>
+        <file>themes/dark/volume-feedback-low.png</file>
+        <file>themes/dark/balance-right@2x.png</file>
+        <file>themes/dark/volume-feedback-high@2x.png</file>
+        <file>themes/dark/volume-feedback-low@2x.png</file>
+        <file>themes/dark/volume-high@2x.png</file>
+        <file>themes/dark/volume-low@2x.png</file>
+        <file>themes/dark/balance-left@2x.png</file>
+        <file>themes/dark/icons/nav_sound_normal.svg</file>
+        <file>themes/dark/icons/nav_sound.svg</file>
+        <file>themes/dark/sound_preview_4.svg</file>
+        <file>themes/dark/sound_preview_3.svg</file>
+        <file>themes/dark/sound_preview_2.svg</file>
+        <file>themes/dark/sound_preview_1.svg</file>
+    </qresource>
+</RCC>

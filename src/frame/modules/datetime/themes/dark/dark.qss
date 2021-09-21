@@ -1,0 +1,34 @@
+QLabel#ModuleHeaderIconDatetime {
+    background-image: url(:/datetime/themes/dark/icons/nav_datetime.svg);
+}
+
+Dtk--Widget--DImageButton#DCC-Datetime-Datewidget-Add{
+    qproperty-normalPic: url(:/datetime/themes/dark/icons/add_normal.png);
+    qproperty-hoverPic: url(:/datetime/themes/dark/icons/add_hover.png);
+    qproperty-pressPic: url(:/datetime/themes/dark/icons/add_press.png);
+}
+
+Dtk--Widget--DImageButton#DCC-Datetime-Datewidget-Reduce{
+    qproperty-normalPic: url(:/datetime/themes/dark/icons/reduce_normal.svg);
+    qproperty-hoverPic: url(:/datetime/themes/dark/icons/reduce_hover.svg);
+    qproperty-pressPic: url(:/datetime/themes/dark/icons/reduce_press.svg);
+}
+
+Dtk--Widget--DImageButton#DCC-Datetime-TimezoneItem-Remove{
+    qproperty-normalPic: url(:/datetime/themes/dark/icons/list_delete_normal.svg);
+    qproperty-hoverPic: url(:/datetime/themes/dark/icons/list_delete_hover.svg);
+    qproperty-pressPic: url(:/datetime/themes/dark/icons/list_delete_press.svg);
+}
+
+dcc--datetime--Clock[display=false] {
+    background-color:transparent;
+}
+
+QLineEdit#DCC-Datetime-QLineEdit {
+    border:0px;
+}
+
+QListView#TimezoneCompleter {
+    background: transparent;
+    border: none;
+}

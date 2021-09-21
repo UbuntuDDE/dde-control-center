@@ -1,0 +1,108 @@
+QLabel#ModuleHeaderTitle {
+    color: white;
+    margin: 0 0 0 5px;
+}
+
+QLabel#CurrentDateLabel {
+    color: white;
+}
+
+QLabel#CurrentTimeLabel {
+    color: white;
+}
+
+QLabel#HomeVolumeLowLabel {
+    background-image: url(":/frame/themes/dark/icons/home_volume_low.png");
+}
+
+QLabel#HomeVolumeHighLabel {
+    background-image: url(":/frame/themes/dark/icons/home_volume_high.png");
+}
+
+QLabel#HomeBrightnessLowLabel {
+    background-image: url(":/frame/themes/dark/icons/home_light_low.png");
+}
+
+QLabel#HomeBrightnessHighLabel {
+    background-image: url(":/frame/themes/dark/icons/home_light_high.png");
+}
+
+dcc--QuickSwitchButton#QuickSwitchBluetooth, dcc--QuickSwitchButton#QuickSwitchVPN, dcc--QuickSwitchButton#QuickSwitchWiFi, dcc--QuickSwitchButton#QuickSwitchDisplay, dcc--QuickSwitchButton#QuickSwitchMiracast, dcc--QuickSwitchButton#QuickSwitchAllSettings {
+    qproperty-themeName: "dark";
+}
+
+/* previous button & next button */
+IndicatorWidget > #PrevBtn
+{
+    qproperty-normalPic: url(:/frame/themes/dark/icons/dark_previous_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/dark_previous_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/dark_previous_press.png);
+}
+
+IndicatorWidget > #NextBtn
+{
+    qproperty-normalPic: url(:/frame/themes/dark/icons/dark_next_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/dark_next_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/dark_next_press.png);
+}
+
+IndicatorWidget > #DPIndicator {
+    qproperty-pointColor: rgba(255,255,255,204);
+    qproperty-secondaryPointColor: rgba(255,255,255,76);
+}
+
+QuickControlPanel dcc--widgets--BasicListView {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+Dtk--Widget--DMPRISControl #PrevBtn {
+    qproperty-normalPic: url(:/frame/themes/dark/icons/play_previous_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/play_previous_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/play_previous_press.png);
+}
+
+Dtk--Widget--DMPRISControl #PauseBtn {
+    qproperty-normalPic: url(:/frame/themes/dark/icons/play_pause_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/play_pause_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/play_pause_press.png);
+}
+
+Dtk--Widget--DMPRISControl #PlayBtn {
+    qproperty-normalPic: url(:/frame/themes/dark/icons/play_start_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/play_start_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/play_start_press.png);
+}
+
+Dtk--Widget--DMPRISControl #NextBtn {
+    qproperty-normalPic: url(:/frame/themes/dark/icons/play_next_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/play_next_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/play_next_press.png);
+}
+
+QFrame#UpdateNotifier {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+QFrame#UpdateNotifier:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+Dtk--Widget--DImageButton#NotifyCloseButton{
+    qproperty-normalPic: url(:/frame/themes/dark/icons/notify_close_normal.png);
+    qproperty-hoverPic: url(:/frame/themes/dark/icons/notify_close_hover.png);
+    qproperty-pressPic: url(:/frame/themes/dark/icons/notify_close_press.png);
+}
+
+NavigationBar Dtk--Widget--DImageButton {
+    margin: 0 10px 0 10px;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+
+NavigationBar Dtk--Widget--DImageButton:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+NavigationBar Dtk--Widget--DImageButton[checked=true] {
+    background-color: rgba(255, 255, 255, .3);
+}

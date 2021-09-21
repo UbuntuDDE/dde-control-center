@@ -1,0 +1,17 @@
+QLabel#ModuleHeaderIconBluetooth {
+    background-image: url(:/bluetooth/themes/dark/icons/nav_bluetooth.svg);
+}
+
+dcc-widgets--NormalLabel#DeviceTitle, dcc-widgets--NormalLabel#DeviceState {
+    color: white;
+}
+
+dcc--bluetooth--TitleEdit Dtk--Widget--DImageButton {
+    qproperty-normalPic: url(:/bluetooth/themes/dark/icons/edit_normal.png);
+    qproperty-hoverPic: url(:/bluetooth/themes/dark/icons/edit_hover.png);
+    qproperty-pressPic: url(:/bluetooth/themes/dark/icons/edit_press.png);
+}
+
+dcc--widgets--LargeLabel#PinCodeText {
+    color: black;
+}
