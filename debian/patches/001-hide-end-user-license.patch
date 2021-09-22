@@ -1,0 +1,33 @@
+From 3eaa60b2251d4a78ea0620791e061531cc90d95b Mon Sep 17 00:00:00 2001
+From: justforlxz <justforlxz@gmail.com>
+Date: Tue, 27 Apr 2021 10:08:22 +0800
+Subject: [PATCH] fix: hide end user license on other linux
+
+only deepin community version have
+
+Log:
+---
+ .../window/modules/systeminfo/systeminfowidget.cpp     | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+diff --git a/src/frame/window/modules/systeminfo/systeminfowidget.cpp b/src/frame/window/modules/systeminfo/systeminfowidget.cpp
+index 7b70c611a..5c1e795e4 100644
+--- a/src/frame/window/modules/systeminfo/systeminfowidget.cpp
++++ b/src/frame/window/modules/systeminfo/systeminfowidget.cpp
+@@ -81,6 +81,16 @@ void SystemInfoWidget::initData()
+         {"dcc_privacy_policy", tr("Privacy Policy"), QMetaMethod::fromSignal(&SystemInfoWidget::requestShowPrivacyPolicy), nullptr, "privacyPolicy"}
+     };
+ 
++    if (DSysInfo::isCommunityEdition() && DSysInfo::productType() != DSysInfo::ProductType::Deepin) {
++        auto it = std::find_if(m_itemList.begin(), m_itemList.end(), [=] (const ListSubItem &item) {
++            return item.itemIcon == "dcc_protocol";
++        });
++
++        if (it != m_itemList.end()) {
++            m_itemList.erase(it);
++        }
++    }
++
+     for (auto m : m_itemList) {
+         DStandardItem *item = new DStandardItem;
+         item->setIcon(QIcon::fromTheme(m.itemIcon));

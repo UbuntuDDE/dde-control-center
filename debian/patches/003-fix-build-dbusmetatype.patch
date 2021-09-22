@@ -1,0 +1,45 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ dde-control-center (5.4.70-1) impish; urgency=medium
+ .
+   * New upstream release.
+Author: Arun Kumar Pariyar <openarungeek@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2021-09-21
+
+--- dde-control-center-5.4.70.orig/src/frame/window/mainwindow.cpp
++++ dde-control-center-5.4.70/src/frame/window/mainwindow.cpp
+@@ -346,7 +346,6 @@ void MainWindow::initAllModule(const QSt
+         { new MouseModule(this), tr("Mouse")},
+         { new WacomModule(this), tr("Drawing Tablet")},
+         { new KeyboardModule(this), tr("Keyboard and Language")},
+-        { new UpdateModule(this), tr("Updates")},
+         { new SystemInfoModule(this), tr("System Info")},
+         { new CommonInfoModule(this), tr("General Settings")},
+     };
+--- dde-control-center-5.4.70.orig/src/frame/window/modules/network/connectioneditpage.h
++++ dde-control-center-5.4.70/src/frame/window/modules/network/connectioneditpage.h
+@@ -29,6 +29,7 @@
+ #include "interface/moduleinterface.h"
+ #include "interface/namespace.h"
+ 
++#include <QDBusMetaType>
+ #include <QPointer>
+ #include <QPushButton>
+ #include <QVBoxLayout>
